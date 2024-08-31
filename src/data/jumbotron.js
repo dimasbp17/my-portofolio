@@ -1,10 +1,3 @@
-import {
-  FaFacebookF,
-  FaGithub,
-  FaInstagram,
-  FaLinkedinIn,
-} from 'react-icons/fa6';
-
 const dummyJumbotron = [
   {
     name: 'Dimas Bagus Prasetyo',

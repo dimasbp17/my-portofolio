@@ -2,11 +2,12 @@ import React from 'react';
 import Navbar from '../../components/Navbar';
 import Jumbotron from '../../components/Jumbotron';
 import dummyJumbotron from '../../data/jumbotron';
+import Skill from '../../components/Skill';
 
 const Home = () => {
   return (
     <>
-      <div className="bg-black">
+      <div className="bg-black font-poppins">
         <Navbar />
 
         <div>
@@ -21,6 +22,9 @@ const Home = () => {
               />
             </div>
           ))}
+        </div>
+        <div>
+          <Skill />
         </div>
       </div>
     </>
