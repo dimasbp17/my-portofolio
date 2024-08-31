@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { IoClose, IoMenu } from 'react-icons/io5';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <>
       <div className="w-full py-5 bg-[#0F0F0F] px-4 md:px-20 fixed">
@@ -33,16 +35,45 @@ const Navbar = () => {
               }`}
             >
               <li>
-                <a
-                  href="#home"
-                  className="hover:text-lavender"
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive ? 'text-lavender' : 'hover:text-lavender'
+                  }
                 >
                   Home
-                </a>
+                </NavLink>
               </li>
-              <li>About</li>
-              <li>Project</li>
-              <li>Blog</li>
+              <li>
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) =>
+                    isActive ? 'text-lavender' : 'hover:text-lavender'
+                  }
+                >
+                  About
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/skill"
+                  className={({ isActive }) =>
+                    isActive ? 'text-lavender' : 'hover:text-lavender'
+                  }
+                >
+                  Skill
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/project"
+                  className={({ isActive }) =>
+                    isActive ? 'text-lavender' : 'hover:text-lavender'
+                  }
+                >
+                  Project
+                </NavLink>
+              </li>
             </ul>
           </div>
         </div>
