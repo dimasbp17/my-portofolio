@@ -8,7 +8,6 @@ import {
   FaLinkedinIn,
 } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
-import dummyJumbotron from '../data/jumbotron';
 import { Link } from 'react-router-dom';
 
 const Jumbotron = ({ name, role, description, image, socialLinks }) => {
@@ -44,7 +43,7 @@ const Jumbotron = ({ name, role, description, image, socialLinks }) => {
           <div className="relative flex items-center justify-center ">
             <img
               src={image}
-              alt=""
+              alt="Dimas Bagus Prasetyo"
               className="w-[200px] rounded-lg z-10 hover:scale-105 duration-300"
             />
             <div className="absolute bg-lavender w-[200px] h-[300px] rounded-lg top-4 ml-8"></div>
