@@ -39,7 +39,7 @@ const Jumbotron = ({ name, role, description, image, socialLinks }) => {
             Download CV
           </Button>
         </div>
-        <div className="space-y-10 col-span-full md:col-span-6">
+        <div className="hidden space-y-10 col-span-full md:col-span-6 md:block">
           <div className="relative flex items-center justify-center ">
             <img
               src={image}
