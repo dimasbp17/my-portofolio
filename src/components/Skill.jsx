@@ -6,9 +6,11 @@ import { Link } from 'react-router-dom';
 const Skill = () => {
   return (
     <>
-      <div className="flex flex-col items-center w-full h-screen p-5 text-white">
-        <div className="text-xl font-bold">Kemampuan dan Keahlian</div>
-        <div className="grid grid-cols-2 space-x-5 md:grid-cols-5">
+      <div className="flex flex-col items-center w-full min-h-screen p-5 text-white">
+        <div className="mt-5 mb-10 text-xl font-bold">
+          Kemampuan dan Keahlian
+        </div>
+        <div className="grid grid-cols-2 gap-2 md:gap-5 md:grid-cols-5">
           {skill.map((skill) => (
             <Link
               to={skill.link}
@@ -17,7 +19,7 @@ const Skill = () => {
               <img
                 src={skill.image}
                 alt=""
-                className="size-40"
+                className="size-32 md:size-36"
               />
               <span className="font-semibold">{skill.skill}</span>
             </Link>
