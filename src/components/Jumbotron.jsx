@@ -44,9 +44,9 @@ const Jumbotron = ({ name, role, description, image, socialLinks }) => {
             <img
               src={image}
               alt="Dimas Bagus Prasetyo"
-              className="w-[200px] rounded-lg z-10 hover:scale-105 duration-300"
+              className="w-[300px] h-[300px] object-cover object-top z-10 hover:scale-105 duration-300 rounded-full"
             />
-            <div className="absolute bg-lavender w-[200px] h-[300px] rounded-lg top-4 ml-8"></div>
+            {/* <div className="absolute bg-lavender w-[300px] h-[300px] rounded-full top-4 ml-8"></div> */}
           </div>
 
           <div className="flex items-center justify-center">
@@ -56,7 +56,7 @@ const Jumbotron = ({ name, role, description, image, socialLinks }) => {
                 to={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center mx-2 text-white border border-white rounded-full bg-lavender/60 size-10"
+                className="flex items-center justify-center mx-2 text-white duration-300 border border-white rounded-full hover:scale-105 bg-lavender/60 size-10"
               >
                 {iconMap[link.icon]}
               </Link>
