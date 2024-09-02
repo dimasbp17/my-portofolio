@@ -50,7 +50,6 @@ const Jumbotron = ({ name, role, description, image, socialLinks }) => {
           </div>
 
           <div className="flex items-center justify-center">
-            <span>Temukan saya</span>
             {socialLinks.map((link, index) => (
               <Link
                 key={index}

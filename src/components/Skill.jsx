@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 const Skill = () => {
   return (
     <>
-      <div className="flex flex-col items-center w-full min-h-screen p-5 text-white">
-        <div className="mt-5 mb-10 text-xl font-bold">
+      <div className="flex flex-col items-center justify-center w-full min-h-screen p-5 text-white">
+        <div className="mt-5 mb-10 text-4xl font-bold">
           Kemampuan dan Keahlian
         </div>
         <div className="grid grid-cols-2 gap-2 md:gap-5 md:grid-cols-5">

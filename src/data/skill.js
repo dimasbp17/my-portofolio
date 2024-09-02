@@ -40,6 +40,11 @@ const skill = [
     image: '/images/github.png',
   },
   {
+    skill: 'Figma',
+    link: 'https://github.com/',
+    image: '/images/figma.png',
+  },
+  {
     skill: 'Adobe Illustrator',
     link: 'https://www.adobe.com/id_id/products/illustrator.html',
     image: '/images/ai.png',

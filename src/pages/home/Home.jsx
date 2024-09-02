@@ -3,6 +3,8 @@ import Navbar from '../../components/Navbar';
 import Jumbotron from '../../components/Jumbotron';
 import dummyJumbotron from '../../data/jumbotron';
 import Skill from '../../components/Skill';
+import About from '../../components/About';
+import Project from '../../components/Project';
 
 const Home = () => {
   return (
@@ -24,7 +26,13 @@ const Home = () => {
           ))}
         </div>
         <div>
+          <About />
+        </div>
+        <div>
           <Skill />
+        </div>
+        <div>
+          <Project />
         </div>
       </div>
     </>

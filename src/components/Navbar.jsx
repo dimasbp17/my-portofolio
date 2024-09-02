@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="w-full py-5 bg-[#0F0F0F] px-4 md:px-20 fixed">
+      <div className="w-full py-5 bg-[#0F0F0F] px-4 md:px-20 fixed z-50">
         <div className="flex items-center justify-between">
           <div className="flex text-xl font-bold">
             <span className="text-white">Dimas</span>
