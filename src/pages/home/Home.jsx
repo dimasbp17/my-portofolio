@@ -9,7 +9,7 @@ import Project from '../../components/Project';
 const Home = () => {
   return (
     <>
-      <div className="bg-black font-poppins">
+      <div className="bg-black font-roboto">
         <Navbar />
 
         <div>
