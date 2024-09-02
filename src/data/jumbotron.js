@@ -3,7 +3,7 @@ const dummyJumbotron = [
     name: 'Dimas Bagus Prasetyo',
     role: 'Frontend Web Developer',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil labore commodi ullam, voluptatum ipsam nulla inventore dignissimos, qui ea expedita unde in architecto pariatur voluptatibus molestiae, obcaecati odit natus laborum.',
+      'Im a person who has a keen interest in the design layout. I think presenting an attractive design is a matter of concern in developing a branding of products. To creates a good design,  I focus on proper composition and visual decoration details in order to make it more professional. For the time being, Im developing the skill for acquiring the UI/UX design for dynamic application and web development.',
     skills: ['React.js', 'JavaScript', 'HTML', 'CSS', 'Material Tailwind'],
     image: '/images/dimas.jpg',
     socialLinks: [
