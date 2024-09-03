@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { IoClose, IoMenu } from 'react-icons/io5';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -10,6 +11,31 @@ const Navbar = () => {
   const scroolToSection = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  const handleScroll = () => {
+    const sections = ['home', 'about', 'skill', 'project'];
+    const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+    sections.forEach((section) => {
+      const element = document.getElementById(section);
+      if (element) {
+        const { offsetTop, offsetHeight } = element;
+        if (
+          scrollPosition >= offsetTop &&
+          scrollPosition <= offsetTop + offsetHeight
+        ) {
+          setActiveSection(section);
+        }
+      }
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <>
@@ -38,16 +64,34 @@ const Navbar = () => {
               }`}
             >
               <li>
-                <button onClick={() => scroolToSection('home')}>Home</button>
+                <button
+                  onClick={() => scroolToSection('home')}
+                  className={activeSection === 'home' ? 'text-hijau' : ''}
+                >
+                  Home
+                </button>
               </li>
               <li>
-                <button onClick={() => scroolToSection('about')}>About</button>
+                <button
+                  onClick={() => scroolToSection('about')}
+                  className={activeSection === 'about' ? 'text-hijau' : ''}
+                >
+                  About
+                </button>
               </li>
               <li>
-                <button onClick={() => scroolToSection('skill')}>Skill</button>
+                <button
+                  onClick={() => scroolToSection('skill')}
+                  className={activeSection === 'skill' ? 'text-hijau' : ''}
+                >
+                  Skill
+                </button>
               </li>
               <li>
-                <button onClick={() => scroolToSection('project')}>
+                <button
+                  onClick={() => scroolToSection('project')}
+                  className={activeSection === 'project' ? 'text-hijau' : ''}
+                >
                   Project
                 </button>
               </li>

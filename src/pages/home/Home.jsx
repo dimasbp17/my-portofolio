@@ -5,6 +5,7 @@ import dummyJumbotron from '../../data/jumbotron';
 import Skill from '../../components/Skill';
 import About from '../../components/About';
 import Project from '../../components/Project';
+import Footer from '../../components/Footer';
 
 const Home = () => {
   return (
@@ -33,6 +34,10 @@ const Home = () => {
         </section>
         <section id="project">
           <Project />
+        </section>
+
+        <section>
+          <Footer />
         </section>
       </div>
     </>

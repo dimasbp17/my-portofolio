@@ -34,14 +34,6 @@ const Jumbotron = ({ name, role, description, image, socialLinks }) => {
               speed={150}
               loop={true}
             />
-            {/* <Typical
-              steps={role.flatMap((r) => [r, 1000])}
-              loop={Infinity}
-              wrapper="span"
-              className="font-semibold"
-              speed={150}
-              delay={2000}
-            /> */}
           </div>
           <hr className="mt-5 border border-gray-300" />
           <div className="my-5 text-justify">{description}</div>

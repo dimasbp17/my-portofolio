@@ -6,7 +6,7 @@ const About = () => {
       <div className="flex flex-col items-center justify-center w-full min-h-screen p-5 md:px-20 text-white bg-[#0F0F0F]">
         <div>
           <div className="flex flex-col items-start mt-5 mb-10 text-4xl font-bold md:flex-row md:items-center text-nowrap">
-            Tentang Saya
+            Tentang <span className="ml-2 text-hijau">Saya</span>
             <hr className="w-full border border-white md:ml-5" />
           </div>
           <div className="text-lg leading-7 text-justify ">
