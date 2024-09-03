@@ -10,6 +10,7 @@ module.exports = withMT({
       },
       colors: {
         lavender: '#7456FF',
+        hijau: '#1fea00',
       },
     },
   },

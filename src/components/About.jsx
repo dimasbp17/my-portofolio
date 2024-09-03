@@ -11,14 +11,19 @@ const About = () => {
           </div>
           <div className="text-lg leading-7 text-justify ">
             Halo! Saya {''}
-            <strong className="text-lavender">Dimas Bagus Prasetyo</strong>,
+            <strong className="text-hijau">Dimas Bagus Prasetyo</strong>,
             seorang Frontend Web Developer yang bersemangat menciptakan
             pengalaman web yang menarik dan fungsional. Saya merupakan lulusan
-            dari Universitas AMIKOM Yogyakarta dan saat ini bekerja di Sofyan
-            Corporation sebagai Frontend Web Developer. Saya memiliki keahlian
-            dalam berbagai teknologi pengembangan web seperti HTML, CSS,
-            JavaScript, React.js, Next.js, Node.js, Tailwind, dan Bootstrap.
-            Selain itu, saya juga terampil menggunakan alat-alat kolaborasi
+            dari{' '}
+            <span className="text-hijau">Universitas AMIKOM Yogyakarta</span>{' '}
+            dan saat ini bekerja di Sofyan Corporation sebagai Frontend Web
+            Developer. Saya memiliki keahlian dalam berbagai teknologi
+            pengembangan web seperti{' '}
+            <span className="text-hijau">
+              HTML, CSS, JavaScript, React.js, Next.js, Node.js, Tailwind, dan
+              Bootstrap
+            </span>
+            . Selain itu, saya juga terampil menggunakan alat-alat kolaborasi
             seperti GitHub dan Figma untuk desain antarmuka pengguna. <br />
             Dengan pengalaman ini, saya selalu berusaha menggabungkan desain
             yang estetik dengan fungsionalitas yang optimal untuk menghadirkan

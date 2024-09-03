@@ -12,7 +12,7 @@ const Home = () => {
       <div className="bg-black font-roboto">
         <Navbar />
 
-        <div>
+        <section id="home">
           {dummyJumbotron.map((data, index) => (
             <div key={index}>
               <Jumbotron
@@ -24,16 +24,16 @@ const Home = () => {
               />
             </div>
           ))}
-        </div>
-        <div>
+        </section>
+        <section id="about">
           <About />
-        </div>
-        <div>
+        </section>
+        <section id="skill">
           <Skill />
-        </div>
-        <div>
+        </section>
+        <section id="project">
           <Project />
-        </div>
+        </section>
       </div>
     </>
   );

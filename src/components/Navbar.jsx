@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { IoClose, IoMenu } from 'react-icons/io5';
-import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const scroolToSection = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -14,7 +17,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div className="flex text-xl font-bold">
             <span className="text-white">Dimas</span>
-            <span className="text-lavender">WEB</span>
+            <span className="text-hijau">WEB</span>
           </div>
 
           <div
@@ -35,44 +38,18 @@ const Navbar = () => {
               }`}
             >
               <li>
-                <NavLink
-                  to="/"
-                  className={({ isActive }) =>
-                    isActive ? 'text-lavender' : 'hover:text-lavender'
-                  }
-                >
-                  Home
-                </NavLink>
+                <button onClick={() => scroolToSection('home')}>Home</button>
               </li>
               <li>
-                <NavLink
-                  to="/about"
-                  className={({ isActive }) =>
-                    isActive ? 'text-lavender' : 'hover:text-lavender'
-                  }
-                >
-                  About
-                </NavLink>
+                <button onClick={() => scroolToSection('about')}>About</button>
               </li>
               <li>
-                <NavLink
-                  to="/skill"
-                  className={({ isActive }) =>
-                    isActive ? 'text-lavender' : 'hover:text-lavender'
-                  }
-                >
-                  Skill
-                </NavLink>
+                <button onClick={() => scroolToSection('skill')}>Skill</button>
               </li>
               <li>
-                <NavLink
-                  to="/project"
-                  className={({ isActive }) =>
-                    isActive ? 'text-lavender' : 'hover:text-lavender'
-                  }
-                >
+                <button onClick={() => scroolToSection('project')}>
                   Project
-                </NavLink>
+                </button>
               </li>
             </ul>
           </div>

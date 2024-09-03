@@ -19,19 +19,25 @@ const Project = () => {
             Project Saya
           </div>
         </div>
-        <div className="grid w-full grid-cols-2">
-          <div className="bg-[#131313] w-full rounded-lg p-5">
+        <div className="grid w-full grid-cols-1 md:grid-cols-2">
+          <div className="w-full p-5 bg-black rounded-xl">
             <div className="flex flex-col w-full ">
               <div className="w-full bg-white h-28"></div>
-              <div className="flex items-center">
+              <div className="flex flex-col items-start">
                 <span className="text-xl font-semibold">Safar Link</span>
+                <span className="text-base text-justify text-white/90">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet eius quia ipsam dolorum impedit repudiandae, suscipit
+                  vitae saepe consequuntur cupiditate odit et assumenda sequi
+                  quas culpa voluptatum cumque quae porro?
+                </span>
               </div>
-              <div className="flex items-center justify-center">
+              <div className="flex items-center justify-center mt-2">
                 <Button
                   size="md"
-                  className="bg-lavender"
+                  className="capitalize bg-hijau"
                 >
-                  Lihat Detail
+                  Buka Project
                 </Button>
               </div>
             </div>

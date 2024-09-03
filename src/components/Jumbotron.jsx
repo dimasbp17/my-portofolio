@@ -1,5 +1,5 @@
 import { Button } from '@material-tailwind/react';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   FaFacebookF,
   FaFileLines,
@@ -9,6 +9,7 @@ import {
 } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import Typewriter from './Typewriter';
 
 const Jumbotron = ({ name, role, description, image, socialLinks }) => {
   const iconMap = {
@@ -23,17 +24,31 @@ const Jumbotron = ({ name, role, description, image, socialLinks }) => {
       <div className="grid items-center justify-center w-full h-screen grid-cols-12 p-4 pt-16 text-white md:gap-10 md:px-20">
         <div className="flex flex-col gap-2 col-span-full md:col-span-6">
           <span className="font-bold md:text-2xl">Halo semua</span>
-          <div className="font-bold md:text-5xl">
+          <div className="text-lg font-bold md:text-5xl">
             <span>Saya </span>
-            <span className="text-lavender">{name}</span>
+            <span className="text-hijau">{name}</span>
           </div>
-          <div className="text-lg text-white/70">{role}</div>
+          <div className="text-lg text-white/70 h-7">
+            <Typewriter
+              texts={role}
+              speed={150}
+              loop={true}
+            />
+            {/* <Typical
+              steps={role.flatMap((r) => [r, 1000])}
+              loop={Infinity}
+              wrapper="span"
+              className="font-semibold"
+              speed={150}
+              delay={2000}
+            /> */}
+          </div>
           <hr className="mt-5 border border-gray-300" />
           <div className="my-5 text-justify">{description}</div>
 
           <Button
             size="lg"
-            className="flex items-center justify-center capitalize bg-lavender"
+            className="flex items-center justify-center capitalize bg-hijau"
           >
             <FaFileLines />
             Download CV
@@ -56,7 +71,7 @@ const Jumbotron = ({ name, role, description, image, socialLinks }) => {
                 to={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center mx-2 text-white duration-300 border border-white rounded-full hover:scale-105 bg-lavender/60 size-10"
+                className="flex items-center justify-center mx-2 text-white duration-300 border border-white rounded-full hover:scale-105 bg-hijau/60 size-10"
               >
                 {iconMap[link.icon]}
               </Link>
