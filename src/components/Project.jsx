@@ -19,17 +19,18 @@ const Project = () => {
             Project Saya
           </div>
         </div>
-        <div className="grid w-full grid-cols-1 md:grid-cols-2">
-          <div className="w-full p-5 bg-black rounded-xl">
+        <div className="grid w-full grid-cols-1 md:grid-cols-3">
+          <div className="w-full p-5 bg-black border border-white rounded-xl">
             <div className="flex flex-col w-full ">
               <div className="w-full bg-white h-28"></div>
               <div className="flex flex-col items-start">
-                <span className="text-xl font-semibold">Safar Link</span>
+                <span className="text-xl font-semibold text-hijau">
+                  Safar Link
+                </span>
                 <span className="text-base text-justify text-white/90">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eveniet eius quia ipsam dolorum impedit repudiandae, suscipit
-                  vitae saepe consequuntur cupiditate odit et assumenda sequi
-                  quas culpa voluptatum cumque quae porro?
+                  Safar Link merupakan suatu aplikasi berbasis web yang
+                  digunakan untuk membuat suatu laman yang dapat di share kepada
+                  khalayak umum.
                 </span>
               </div>
               <div className="flex items-center justify-center mt-2">
