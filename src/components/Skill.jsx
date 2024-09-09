@@ -42,11 +42,11 @@ const Skill = () => {
         </div>
 
         <div className="my-5">Teknologi</div>
-        <div className="grid grid-cols-2 gap-2 md:gap-5 md:grid-cols-5">
+        <div className="grid w-full grid-cols-2 gap-2 md:gap-5 md:grid-cols-5">
           {skills.tech.map(({ skill, link, logo }, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center p-4 duration-300 bg-transparent border border-white rounded-lg size-32 hover:bg-hijau hover:text-white"
+              className="flex flex-col items-center justify-center p-4 duration-300 bg-transparent border border-white rounded-lg hover:bg-hijau hover:text-white"
             >
               <div className="text-2xl">{iconMap[logo]}</div>
               <Link
@@ -62,11 +62,11 @@ const Skill = () => {
         </div>
 
         <div className="my-5">Alat</div>
-        <div className="grid grid-cols-2 gap-2 md:gap-5 md:grid-cols-5">
+        <div className="grid w-full grid-cols-2 gap-2 md:gap-5 md:grid-cols-5">
           {skills.tools.map(({ skill, link, logo }, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center p-4 duration-300 bg-transparent border border-white rounded-lg size-32 hover:bg-hijau hover:text-white"
+              className="flex flex-col items-center justify-center p-4 duration-300 bg-transparent border border-white rounded-lg hover:bg-hijau hover:text-white"
             >
               <div className="text-2xl">{iconMap[logo]}</div>
               <Link
