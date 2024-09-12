@@ -23,11 +23,25 @@ const Jumbotron = ({ name, role, description, image, socialLinks }) => {
     <>
       <div className="grid items-center justify-center w-full h-screen grid-cols-12 p-4 pt-16 text-white md:gap-10 md:px-20">
         <div className="flex flex-col gap-2 col-span-full md:col-span-6">
-          <span className="font-bold md:text-2xl">Halo semua</span>
-          <div className="text-lg font-bold md:text-5xl">
+          <motion.span
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            className="font-bold md:text-2xl"
+          >
+            Halo semua
+          </motion.span>
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false, amount: 0.2 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            className="text-lg font-bold md:text-5xl"
+          >
             <span>Saya </span>
             <span className="text-hijau">{name}</span>
-          </div>
+          </motion.div>
           <div className="text-lg text-white/70 h-7">
             <Typewriter
               texts={role}
@@ -35,28 +49,57 @@ const Jumbotron = ({ name, role, description, image, socialLinks }) => {
               loop={true}
             />
           </div>
-          <hr className="mt-5 border border-gray-300" />
-          <div className="my-5 text-justify">{description}</div>
-
-          <Button
-            size="lg"
-            className="flex items-center justify-center capitalize bg-hijau"
+          <div>
+            <hr className="mt-5 border border-gray-300" />
+          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.2 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className="my-5 text-justify"
           >
-            <FaFileLines />
-            Download CV
-          </Button>
+            {description}
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 150 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.2 }}
+            transition={{ duration: 1, delay: 0.5 }}
+          >
+            <Button
+              size="lg"
+              className="flex items-center justify-center w-full capitalize bg-hijau"
+            >
+              <FaFileLines />
+              Download CV
+            </Button>
+          </motion.div>
         </div>
         <div className="hidden space-y-10 col-span-full md:col-span-6 md:block">
-          <div className="relative flex items-center justify-center ">
+          <motion.div
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.2 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className="relative flex items-center justify-center "
+          >
             <img
               src={image}
               alt="Dimas Bagus Prasetyo"
               className="w-[300px] h-[300px] object-cover object-top z-10 hover:scale-105 duration-300 rounded-full"
             />
             {/* <div className="absolute bg-lavender w-[300px] h-[300px] rounded-full top-4 ml-8"></div> */}
-          </div>
+          </motion.div>
 
-          <div className="flex items-center justify-center">
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.2 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className="flex items-center justify-center"
+          >
             {socialLinks.map((link, index) => (
               <Link
                 key={index}
@@ -68,7 +111,7 @@ const Jumbotron = ({ name, role, description, image, socialLinks }) => {
                 {iconMap[link.icon]}
               </Link>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </>
