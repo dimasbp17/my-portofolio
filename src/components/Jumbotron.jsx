@@ -26,7 +26,7 @@ const Jumbotron = ({ name, role, description, image, socialLinks }) => {
           <motion.span
             initial={{ opacity: 0, y: -100 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.5, delay: 0.5 }}
             className="font-bold md:text-2xl"
           >
@@ -35,7 +35,7 @@ const Jumbotron = ({ name, role, description, image, socialLinks }) => {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 1, delay: 0.2 }}
             className="text-lg font-bold md:text-5xl"
           >
@@ -55,7 +55,7 @@ const Jumbotron = ({ name, role, description, image, socialLinks }) => {
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 1, delay: 0.5 }}
             className="my-5 text-justify"
           >
@@ -65,7 +65,7 @@ const Jumbotron = ({ name, role, description, image, socialLinks }) => {
           <motion.div
             initial={{ opacity: 0, y: 150 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
             <Button
@@ -81,7 +81,7 @@ const Jumbotron = ({ name, role, description, image, socialLinks }) => {
           <motion.div
             initial={{ opacity: 0, y: -100 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 1, delay: 0.5 }}
             className="relative flex items-center justify-center "
           >
@@ -96,7 +96,7 @@ const Jumbotron = ({ name, role, description, image, socialLinks }) => {
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 1, delay: 0.5 }}
             className="flex items-center justify-center"
           >
