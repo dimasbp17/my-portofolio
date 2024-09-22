@@ -23,6 +23,14 @@ const project = [
       'The Football Roster merupakan website yang menyediakan informasi tentang klub-klub sepakbola di dunia beserta update klasemen liga per musim',
     href: 'https://the-football-roster.vercel.app/',
   },
+  {
+    id: 4,
+    image: '/public/images/ew.png',
+    title: 'The Football Roster',
+    description:
+      'The Football Roster merupakan website yang menyediakan informasi tentang klub-klub sepakbola di dunia beserta update klasemen liga per musim',
+    href: 'https://the-football-roster.vercel.app/',
+  },
 ];
 
 export default project;
