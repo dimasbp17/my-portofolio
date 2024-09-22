@@ -1,7 +1,7 @@
 const project = [
   {
     id: 1,
-    image: '/public/images/web-safar.png',
+    image: '/images/web-safar.png',
     title: 'Learning Management System',
     description:
       'Safar Link merupakan suatu aplikasi berbasis web yang digunakan untuk membuat suatu laman yang dapat di share kepada khalayak umum.',
@@ -9,7 +9,7 @@ const project = [
   },
   {
     id: 2,
-    image: '/public/images/web-safar.png',
+    image: '/images/web-safar.png',
     title: 'Safar Link',
     description:
       'Safar Link merupakan suatu aplikasi berbasis web yang digunakan untuk membuat suatu laman yang dapat di share kepada khalayak umum.',
@@ -17,7 +17,7 @@ const project = [
   },
   {
     id: 3,
-    image: '/public/images/football-roster.png',
+    image: '/images/football-roster.png',
     title: 'The Football Roster',
     description:
       'The Football Roster merupakan website yang menyediakan informasi tentang klub-klub sepakbola di dunia beserta update klasemen liga per musim',
@@ -25,7 +25,7 @@ const project = [
   },
   {
     id: 4,
-    image: '/public/images/ew.png',
+    image: '/images/ew.png',
     title: 'The Football Roster',
     description:
       'The Football Roster merupakan website yang menyediakan informasi tentang klub-klub sepakbola di dunia beserta update klasemen liga per musim',
