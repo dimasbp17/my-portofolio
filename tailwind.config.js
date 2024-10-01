@@ -10,9 +10,12 @@ module.exports = withMT({
       },
       colors: {
         lavender: '#7456FF',
-        hijau: '#1fea00',
+        hijau: '#32CD32',
+        biruMuda: '#93deff',
       },
     },
   },
   plugins: [],
 });
+
+// #1fea00

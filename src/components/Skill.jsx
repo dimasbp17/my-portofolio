@@ -46,7 +46,7 @@ const Skill = () => {
           {skills.tech.map(({ skill, link, logo }, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center p-4 duration-300 bg-transparent border border-white rounded-lg hover:bg-hijau hover:text-white"
+              className="flex flex-col items-center justify-center p-4 duration-300 bg-transparent border border-white rounded-lg hover:bg-biruMuda hover:text-white"
             >
               <div className="text-2xl">{iconMap[logo]}</div>
               <Link
@@ -66,7 +66,7 @@ const Skill = () => {
           {skills.tools.map(({ skill, link, logo }, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center p-4 duration-300 bg-transparent border border-white rounded-lg hover:bg-hijau hover:text-white"
+              className="flex flex-col items-center justify-center p-4 duration-300 bg-transparent border border-white rounded-lg hover:bg-biruMuda hover:text-white"
             >
               <div className="text-2xl">{iconMap[logo]}</div>
               <Link
