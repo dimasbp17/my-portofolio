@@ -1,7 +1,7 @@
 const project = [
   {
     id: 1,
-    image: '/images/web-safar.png',
+    image: '/images/lms.png',
     title: 'Learning Management System',
     description:
       'Safar Link merupakan suatu aplikasi berbasis web yang digunakan untuk membuat suatu laman yang dapat di share kepada khalayak umum.',
