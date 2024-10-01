@@ -1,9 +1,27 @@
 import { Button } from '@material-tailwind/react';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import project from '../data/project';
 import { Link } from 'react-router-dom';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const Project = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isVisible, setIsVisible] = useState(true); // Kontrol visibility gambar
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsVisible(false); // Sembunyikan gambar sebelum berganti
+      setTimeout(() => {
+        setCurrentImageIndex(
+          (prevIndex) => (prevIndex + 1) % project[0].image.length
+        );
+        setIsVisible(true); // Tampilkan gambar setelah berganti
+      }, 500); // Delay untuk transisi (0.5 detik)
+    }, 4000); // Ganti gambar setiap 3 detik
+
+    return () => clearInterval(interval);
+  }, []);
   return (
     <>
       <div className="flex flex-col items-center justify-center w-full min-h-screen bg-[#0F0F0F] p-5 text-white md:p-20">
@@ -21,7 +39,7 @@ const Project = () => {
             Project Saya
           </div>
         </div>
-        <div className="grid w-full grid-cols-1 gap-5 md:grid-cols-3">
+        <div className="grid w-full grid-cols-1 gap-5 md:grid-cols-2">
           {project.map((data) => (
             <div
               key={data.id}
@@ -30,8 +48,11 @@ const Project = () => {
               <div className="flex flex-col w-full ">
                 <div className="w-full ">
                   <img
-                    src={data.image}
+                    src={data.image[currentImageIndex]}
                     alt={data.title}
+                    className={`w-full h-auto transition-opacity duration-500 ${
+                      isVisible ? 'opacity-100' : 'opacity-0'
+                    }`}
                   />
                 </div>
                 <div className="flex flex-col items-start gap-2">
@@ -42,7 +63,7 @@ const Project = () => {
                     {data.description}
                   </span>
                 </div>
-                <div className="flex items-center justify-center mt-2">
+                <div className="flex items-center justify-end mt-2">
                   <Link
                     to={data.href}
                     target="blank"
@@ -51,7 +72,7 @@ const Project = () => {
                       size="md"
                       className="capitalize bg-hijau"
                     >
-                      Buka Project
+                      Demo
                     </Button>
                   </Link>
                 </div>
