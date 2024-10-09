@@ -39,7 +39,7 @@ const Project = () => {
             Project Saya
           </div>
         </div>
-        <div className="grid w-full grid-cols-1 gap-5 md:grid-cols-2">
+        <div className="grid w-full grid-cols-1 gap-5 md:grid-cols-3">
           {project.map((data) => (
             <div
               key={data.id}

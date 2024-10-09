@@ -17,7 +17,11 @@ const project = [
   },
   {
     id: 3,
-    image: '/images/football-roster.png',
+    image: [
+      '/images/movie-1.png',
+      '/images/movie-2.png',
+      '/images/movie-3.png',
+    ],
     title: 'D-Movies',
     description:
       'D-Movies merupakan website yang menyediakan informasi berbagai jenis film mulai dari yang populer, top rated, detail, dll. Diambil dari API The Movie DB.',
