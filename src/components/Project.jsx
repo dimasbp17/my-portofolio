@@ -8,6 +8,11 @@ import 'slick-carousel/slick/slick-theme.css';
 const Project = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true); // Kontrol visibility gambar
+  const [activeTab, setActiveTab] = useState(1);
+
+  const handleTabClick = (index) => {
+    setActiveTab(index);
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -18,10 +23,19 @@ const Project = () => {
         );
         setIsVisible(true); // Tampilkan gambar setelah berganti
       }, 500); // Delay untuk transisi (0.5 detik)
-    }, 4000); // Ganti gambar setiap 3 detik
+    }, 4000); // Ganti gambar setiap 4 detik
 
     return () => clearInterval(interval);
   }, []);
+
+  // Filter proyek berdasarkan kategori
+  const personalProjects = project.filter(
+    (data) => data.category === 'personal'
+  );
+  const professionalProjects = project.filter(
+    (data) => data.category === 'professional'
+  );
+
   return (
     <>
       <div className="flex flex-col items-center justify-center w-full min-h-screen bg-[#0F0F0F] p-5 text-white md:p-20">
@@ -39,46 +53,119 @@ const Project = () => {
             Project Saya
           </div>
         </div>
-        <div className="grid w-full grid-cols-1 gap-5 md:grid-cols-3">
-          {project.map((data) => (
-            <div
-              key={data.id}
-              className="w-full p-5 bg-black border border-white rounded-xl"
-            >
-              <div className="flex flex-col w-full ">
-                <div className="w-full ">
-                  <img
-                    src={data.image[currentImageIndex]}
-                    alt={data.title}
-                    className={`w-full h-auto transition-opacity duration-500 ${
-                      isVisible ? 'opacity-100' : 'opacity-0'
-                    }`}
-                  />
+
+        <div className="flex text-lg">
+          <button
+            className={`py-2 px-4 ${
+              activeTab === 1
+                ? 'border-b-2 border-hijau text-hijau'
+                : 'text-gray-500'
+            }`}
+            onClick={() => handleTabClick(1)}
+          >
+            Professional Project
+          </button>
+          <button
+            className={`py-2 px-4 ${
+              activeTab === 2
+                ? 'border-b-2 border-hijau text-hijau'
+                : 'text-gray-500'
+            }`}
+            onClick={() => handleTabClick(2)}
+          >
+            Personal Project
+          </button>
+        </div>
+
+        {/* Tab Content */}
+        <div className="p-4">
+          {activeTab === 1 && (
+            <div className="grid w-full grid-cols-1 gap-5 md:grid-cols-3">
+              {professionalProjects.map((data) => (
+                <div
+                  key={data.id}
+                  className="w-full p-5 bg-black border border-white rounded-xl"
+                >
+                  <div className="flex flex-col w-full ">
+                    <div className="w-full ">
+                      <img
+                        src={data.image[currentImageIndex]}
+                        alt={data.title}
+                        className={`w-full h-auto transition-opacity duration-500 ${
+                          isVisible ? 'opacity-100' : 'opacity-0'
+                        }`}
+                      />
+                    </div>
+                    <div className="flex flex-col items-start gap-2">
+                      <span className="mt-2 text-xl font-semibold text-hijau">
+                        {data.title}
+                      </span>
+                      <span className="text-base text-justify text-white/90">
+                        {data.description}
+                      </span>
+                    </div>
+                    <div className="flex items-center justify-end mt-2">
+                      <Link
+                        to={data.href}
+                        target="blank"
+                      >
+                        <Button
+                          size="md"
+                          className="capitalize bg-hijau"
+                        >
+                          Demo
+                        </Button>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex flex-col items-start gap-2">
-                  <span className="mt-2 text-xl font-semibold text-hijau">
-                    {data.title}
-                  </span>
-                  <span className="text-base text-justify text-white/90">
-                    {data.description}
-                  </span>
-                </div>
-                <div className="flex items-center justify-end mt-2">
-                  <Link
-                    to={data.href}
-                    target="blank"
-                  >
-                    <Button
-                      size="md"
-                      className="capitalize bg-hijau"
-                    >
-                      Demo
-                    </Button>
-                  </Link>
-                </div>
-              </div>
+              ))}
             </div>
-          ))}
+          )}
+
+          {activeTab === 2 && (
+            <div className="grid w-full grid-cols-1 gap-5 md:grid-cols-3">
+              {personalProjects.map((data) => (
+                <div
+                  key={data.id}
+                  className="w-full p-5 bg-black border border-white rounded-xl"
+                >
+                  <div className="flex flex-col w-full ">
+                    <div className="w-full ">
+                      <img
+                        src={data.image[currentImageIndex]}
+                        alt={data.title}
+                        className={`w-full h-auto transition-opacity duration-500 ${
+                          isVisible ? 'opacity-100' : 'opacity-0'
+                        }`}
+                      />
+                    </div>
+                    <div className="flex flex-col items-start gap-2">
+                      <span className="mt-2 text-xl font-semibold text-hijau">
+                        {data.title}
+                      </span>
+                      <span className="text-base text-justify text-white/90">
+                        {data.description}
+                      </span>
+                    </div>
+                    <div className="flex items-center justify-end mt-2">
+                      <Link
+                        to={data.href}
+                        target="blank"
+                      >
+                        <Button
+                          size="md"
+                          className="capitalize bg-hijau"
+                        >
+                          Demo
+                        </Button>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </>
