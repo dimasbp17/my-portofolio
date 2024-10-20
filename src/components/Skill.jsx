@@ -41,7 +41,7 @@ const Skill = () => {
           <hr className="w-full border border-white md:ml-5" />
         </div>
 
-        <div className="my-5">Teknologi</div>
+        <div className="my-5 text-hijau">Teknologi</div>
         <div className="grid w-full grid-cols-2 gap-2 md:gap-5 md:grid-cols-5">
           {skills.tech.map(({ skill, link, logo }, index) => (
             <div
@@ -61,7 +61,7 @@ const Skill = () => {
           ))}
         </div>
 
-        <div className="my-5">Alat</div>
+        <div className="my-5 text-hijau">Alat</div>
         <div className="grid w-full grid-cols-2 gap-2 md:gap-5 md:grid-cols-5">
           {skills.tools.map(({ skill, link, logo }, index) => (
             <div

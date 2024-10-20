@@ -30,7 +30,7 @@ const Jumbotron = ({ name, role, description, image, socialLinks }) => {
             transition={{ duration: 0.5, delay: 0.5 }}
             className="font-bold md:text-2xl"
           >
-            Halo semua
+            Halo semua 👋
           </motion.span>
           <motion.div
             initial={{ opacity: 0, x: -50 }}
