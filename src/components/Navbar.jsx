@@ -43,7 +43,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div className="flex text-xl font-bold">
             <span className="text-white">Dimas</span>
-            <span className="text-hijau">WEB</span>
+            <span className="text-hijau">PORT</span>
           </div>
 
           <div
