@@ -38,7 +38,7 @@ const Project = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center w-full min-h-screen bg-[#0F0F0F] p-5 text-white md:p-20">
+      <div className="flex flex-col items-center justify-center w-full min-h-screen p-5 text-white md:p-20">
         <div className="relative flex items-center justify-center">
           <div
             className="font-bold text-[100px] md:text-[150px] text-nowrap -translate-x-52 "
@@ -54,7 +54,7 @@ const Project = () => {
           </div>
         </div>
 
-        <div className="flex text-lg">
+        <div className="flex mb-10 text-lg">
           <button
             className={`py-2 px-4 ${
               activeTab === 1
@@ -84,7 +84,7 @@ const Project = () => {
               {professionalProjects.map((data) => (
                 <div
                   key={data.id}
-                  className="w-full p-5 bg-black border border-white rounded-xl"
+                  className="w-full p-5 border border-white rounded-xl bg-[#0F0F0F]"
                 >
                   <div className="flex flex-col w-full ">
                     <div className="w-full ">
@@ -113,7 +113,7 @@ const Project = () => {
                           size="md"
                           className="capitalize bg-hijau"
                         >
-                          Demo
+                          Visit
                         </Button>
                       </Link>
                     </div>
@@ -128,7 +128,7 @@ const Project = () => {
               {personalProjects.map((data) => (
                 <div
                   key={data.id}
-                  className="w-full p-5 bg-black border border-white rounded-xl"
+                  className="w-full p-5 bg-[#0F0F0F] border border-white rounded-xl"
                 >
                   <div className="flex flex-col w-full ">
                     <div className="w-full ">
@@ -157,7 +157,7 @@ const Project = () => {
                           size="md"
                           className="capitalize bg-hijau"
                         >
-                          Demo
+                          Visit
                         </Button>
                       </Link>
                     </div>

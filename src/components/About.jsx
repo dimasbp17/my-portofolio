@@ -3,13 +3,13 @@ import React from 'react';
 const About = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center w-full min-h-screen p-5 md:px-20 text-white bg-[#0F0F0F]">
+      <div className="flex flex-col items-center justify-center w-full min-h-screen p-5 text-white md:px-20 ">
         <div>
           <div className="flex flex-col items-start mt-5 mb-10 text-4xl font-bold md:flex-row md:items-center text-nowrap">
             Tentang <span className="ml-2 text-hijau">Saya</span>
             <hr className="w-full border border-white md:ml-5" />
           </div>
-          <div className="text-lg leading-7 text-justify ">
+          <div className="text-lg leading-8 text-justify ">
             Halo! Saya {''}
             <strong className="text-hijau">Dimas Bagus Prasetyo</strong>,
             seorang Frontend Web Developer yang bersemangat menciptakan
@@ -24,7 +24,8 @@ const About = () => {
               Bootstrap
             </span>
             . Selain itu, saya juga terampil menggunakan alat-alat kolaborasi
-            seperti GitHub dan Figma untuk desain antarmuka pengguna. <br />
+            seperti GitHub dan Figma untuk desain antarmuka pengguna. <br />{' '}
+            <br />
             Dengan pengalaman ini, saya selalu berusaha menggabungkan desain
             yang estetik dengan fungsionalitas yang optimal untuk menghadirkan
             solusi web yang inovatif dan responsif. Saya senang bekerja secara

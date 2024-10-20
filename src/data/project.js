@@ -1,7 +1,7 @@
 const project = [
   {
     id: 1,
-    image: ['/images/lms.png', '/images/web-safar.png', '/images/lms.png'],
+    image: ['/images/lms-1.png', '/images/lms-2.png', '/images/lms-3.png'],
     title: 'Learning Management System',
     description:
       'Learning Management System merupakan website yang digunakan oleh instansi pendidikan Madina Islamic School yang digunakan sebagai media pembelajaran.',
@@ -10,7 +10,7 @@ const project = [
   },
   {
     id: 2,
-    image: '/images/web-safar.png',
+    image: ['/images/safar-1.png', '/images/safar-2.png'],
     title: 'Safar Link',
     description:
       'Safar Link merupakan suatu aplikasi berbasis web yang digunakan untuk membuat suatu laman yang dapat di share kepada khalayak umum.',
@@ -52,6 +52,19 @@ const project = [
       '/images/football-3.png',
     ],
     title: 'E-Alquran',
+    description:
+      'The Football Roster merupakan website yang menyediakan informasi tentang klub-klub sepakbola di dunia beserta update klasemen liga per musim',
+    href: 'https://e-alquran.vercel.app/',
+    category: 'personal', // Tambahkan kategori
+  },
+  {
+    id: 6,
+    image: [
+      '/images/football-1.png',
+      '/images/football-2.png',
+      '/images/football-3.png',
+    ],
+    title: 'Earthquake & Wheater Info',
     description:
       'The Football Roster merupakan website yang menyediakan informasi tentang klub-klub sepakbola di dunia beserta update klasemen liga per musim',
     href: 'https://e-alquran.vercel.app/',
