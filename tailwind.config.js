@@ -7,6 +7,7 @@ module.exports = withMT({
       fontFamily: {
         poppins: 'Poppins, sans-serif',
         roboto: 'Roboto Mono, monospace',
+        inter: 'Inter, sans-serif',
       },
       colors: {
         lavender: '#7456FF',
