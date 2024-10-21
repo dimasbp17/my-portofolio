@@ -103,6 +103,9 @@ const Project = () => {
                       <span className="text-base text-justify text-white/90">
                         {data.description}
                       </span>
+                      <span className="text-sm text-justify text-green-400">
+                        {data.tech}
+                      </span>
                     </div>
                     <div className="flex items-center justify-end mt-2">
                       <Link

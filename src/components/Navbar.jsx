@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   const handleScroll = () => {
-    const sections = ['home', 'about', 'skill', 'project'];
+    const sections = ['home', 'about', 'skill', 'experience', 'project'];
     const scrollPosition = window.scrollY + window.innerHeight / 2;
 
     sections.forEach((section) => {
@@ -85,6 +85,14 @@ const Navbar = () => {
                   className={activeSection === 'skill' ? 'text-hijau' : ''}
                 >
                   Skill
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scroolToSection('experience')}
+                  className={activeSection === 'experience' ? 'text-hijau' : ''}
+                >
+                  Experience
                 </button>
               </li>
               <li>

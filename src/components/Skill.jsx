@@ -13,9 +13,11 @@ import {
   SiMysql,
   SiNextdotjs,
   SiTailwindcss,
+  SiVisualstudiocode,
 } from 'react-icons/si';
 import { FaBootstrap, FaFigma, FaGithub } from 'react-icons/fa6';
 import skills from '../data/skill.js';
+import { TbBrandVite } from 'react-icons/tb';
 
 const Skill = () => {
   const iconMap = {
@@ -30,8 +32,10 @@ const Skill = () => {
     FaBootstrap: <FaBootstrap />,
     FaFigma: <FaFigma />,
     FaGithub: <FaGithub />,
+    SiVisualstudiocode: <SiVisualstudiocode />,
     SiAdobeillustrator: <SiAdobeillustrator />,
     SiAdobephotoshop: <SiAdobephotoshop />,
+    TbBrandVite: <TbBrandVite />,
   };
   return (
     <>

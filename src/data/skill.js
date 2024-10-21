@@ -45,6 +45,11 @@ const skills = {
       link: 'https://getbootstrap.com/docs/5.0/getting-started/introduction/',
       logo: 'FaBootstrap',
     },
+    {
+      skill: 'Vite',
+      link: 'https://vite.dev/',
+      logo: 'TbBrandVite',
+    },
   ],
   tools: [
     {
@@ -60,7 +65,7 @@ const skills = {
     {
       skill: 'VsCode',
       link: 'https://github.com/',
-      logo: 'FaGithub',
+      logo: 'SiVisualstudiocode',
     },
     {
       skill: 'Adobe Illustrator',

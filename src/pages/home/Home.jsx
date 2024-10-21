@@ -6,6 +6,7 @@ import Skill from '../../components/Skill';
 import About from '../../components/About';
 import Project from '../../components/Project';
 import Footer from '../../components/Footer';
+import Experience from '../../components/Experience';
 
 const Home = () => {
   return (
@@ -31,6 +32,9 @@ const Home = () => {
         </section>
         <section id="skill">
           <Skill />
+        </section>
+        <section id="experience">
+          <Experience />
         </section>
         <section id="project">
           <Project />
