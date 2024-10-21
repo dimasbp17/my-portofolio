@@ -5,8 +5,9 @@ const project = [
     title: 'Learning Management System',
     description:
       'Learning Management System merupakan website yang digunakan oleh instansi pendidikan Madina Islamic School yang digunakan sebagai media pembelajaran.',
-    href: '',
-    category: 'professional', // Tambahkan kategori
+    tech: 'React + Vite, Tailwind, Material Tailwind',
+    href: 'https://tes-lms.vercel.app/',
+    category: 'professional',
   },
   {
     id: 2,
@@ -14,8 +15,10 @@ const project = [
     title: 'Safar Link',
     description:
       'Safar Link merupakan suatu aplikasi berbasis web yang digunakan untuk membuat suatu laman yang dapat di share kepada khalayak umum.',
+    tech: 'Next.Js, Tailwind, Material Tailwind',
+
     href: 'https://web.safarfriendly.com/dashboard/user/safar-link/my-link',
-    category: 'professional', // Tambahkan kategori
+    category: 'professional',
   },
   {
     id: 3,
