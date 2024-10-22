@@ -72,8 +72,7 @@ const Jumbotron = ({ name, role, description, image, socialLinks }) => {
               size="lg"
               className="flex items-center justify-center w-full capitalize bg-hijau"
             >
-              <FaFileLines />
-              Download CV
+              <FaFileLines /> Download CV
             </Button>
           </motion.div>
         </div>
