@@ -10,7 +10,7 @@ const Experience = () => {
           Pengalaman <span className="pl-2 text-hijau">Kerja</span>
           <hr className="w-full border border-white md:ml-5" />
         </div>
-        <div className="grid w-full grid-cols-2 gap-3">
+        <div className="grid w-full grid-cols-2 gap-5 mt-5">
           {pengalamanKerja.map((penga, index) => (
             <Card className="w-full p-3 text-white bg-transparent border border-white">
               <h1 className="font-semibold">{penga.position}</h1>

@@ -54,7 +54,7 @@ const Project = () => {
           </div>
         </div>
 
-        <div className="flex mb-10 text-lg">
+        <div className="flex mb-10 text-lg font-bold">
           <button
             className={`py-2 px-4 ${
               activeTab === 1
@@ -80,7 +80,7 @@ const Project = () => {
         {/* Tab Content */}
         <div className="p-4">
           {activeTab === 1 && (
-            <div className="grid w-full grid-cols-1 gap-5 md:grid-cols-3">
+            <div className="grid w-full grid-cols-1 gap-5 md:grid-cols-2">
               {professionalProjects.map((data) => (
                 <div
                   key={data.id}
@@ -103,7 +103,7 @@ const Project = () => {
                       <span className="text-base text-justify text-white/90">
                         {data.description}
                       </span>
-                      <span className="text-sm text-justify text-green-400">
+                      <span className="text-base text-justify text-blue-500">
                         {data.tech}
                       </span>
                     </div>
@@ -114,7 +114,7 @@ const Project = () => {
                       >
                         <Button
                           size="md"
-                          className="capitalize bg-hijau"
+                          className="px-10 capitalize rounded-md bg-hijau"
                         >
                           Visit
                         </Button>
@@ -127,7 +127,7 @@ const Project = () => {
           )}
 
           {activeTab === 2 && (
-            <div className="grid w-full grid-cols-1 gap-5 md:grid-cols-3">
+            <div className="grid w-full grid-cols-1 gap-5 md:grid-cols-2">
               {personalProjects.map((data) => (
                 <div
                   key={data.id}
@@ -158,7 +158,7 @@ const Project = () => {
                       >
                         <Button
                           size="md"
-                          className="capitalize bg-hijau"
+                          className="px-10 capitalize rounded-md bg-hijau"
                         >
                           Visit
                         </Button>
