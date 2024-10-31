@@ -1,13 +1,13 @@
 import { Button } from '@material-tailwind/react';
 import React, { useEffect, useState } from 'react';
-import project from '../data/project';
 import { Link } from 'react-router-dom';
-import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
+import project from '../data/project';
 
 const Project = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isVisible, setIsVisible] = useState(true); // Kontrol visibility gambar
+  const [isVisible, setIsVisible] = useState(true);
   const [activeTab, setActiveTab] = useState(1);
 
   const handleTabClick = (index) => {
@@ -16,14 +16,14 @@ const Project = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIsVisible(false); // Sembunyikan gambar sebelum berganti
+      setIsVisible(false);
       setTimeout(() => {
         setCurrentImageIndex(
           (prevIndex) => (prevIndex + 1) % project[0].image.length
         );
-        setIsVisible(true); // Tampilkan gambar setelah berganti
-      }, 500); // Delay untuk transisi (0.5 detik)
-    }, 4000); // Ganti gambar setiap 4 detik
+        setIsVisible(true);
+      }, 500);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);
@@ -149,6 +149,9 @@ const Project = () => {
                       </span>
                       <span className="text-base text-justify text-white/90">
                         {data.description}
+                      </span>
+                      <span className="text-base text-justify text-blue-500">
+                        {data.tech}
                       </span>
                     </div>
                     <div className="flex items-center justify-end mt-2">

@@ -11,7 +11,11 @@ const project = [
   },
   {
     id: 2,
-    image: ['/images/safar-1.png', '/images/safar-2.png'],
+    image: [
+      '/images/safar-1.png',
+      '/images/safar-2.png',
+      '/images/safar-3.png',
+    ],
     title: 'Safar Link',
     description:
       'Safar Link merupakan suatu aplikasi berbasis web yang digunakan untuk membuat suatu laman yang dapat di share kepada khalayak umum.',
@@ -30,8 +34,10 @@ const project = [
     title: 'D-Movies',
     description:
       'D-Movies merupakan website yang menyediakan informasi berbagai jenis film mulai dari yang populer, top rated, detail, dll. Diambil dari API The Movie DB.',
+    tech: 'React + Vite, Tailwind, Material Tailwind',
+
     href: 'https://d-movies-omega.vercel.app',
-    category: 'personal', // Tambahkan kategori
+    category: 'personal',
   },
   {
     id: 4,
@@ -43,22 +49,22 @@ const project = [
     title: 'The Football Roster',
     description:
       'The Football Roster merupakan website yang menyediakan informasi tentang klub-klub sepakbola di dunia beserta update klasemen liga per musim',
+    tech: 'Next.Js, Tailwind, Material Tailwind',
+
     href: 'https://the-football-roster.vercel.app/',
-    category: 'personal', // Tambahkan kategori
+    category: 'personal',
   },
 
   {
     id: 5,
-    image: [
-      '/images/football-1.png',
-      '/images/football-2.png',
-      '/images/football-3.png',
-    ],
+    image: ['/images/quran1.png', '/images/quran2.png', '/images/quran3.png'],
     title: 'E-Alquran',
     description:
       'The Football Roster merupakan website yang menyediakan informasi tentang klub-klub sepakbola di dunia beserta update klasemen liga per musim',
+    tech: 'Next.Js, Tailwind, Material Tailwind',
+
     href: 'https://e-alquran.vercel.app/',
-    category: 'personal', // Tambahkan kategori
+    category: 'personal',
   },
   {
     id: 6,
@@ -70,8 +76,10 @@ const project = [
     title: 'Earthquake & Wheater Info',
     description:
       'The Football Roster merupakan website yang menyediakan informasi tentang klub-klub sepakbola di dunia beserta update klasemen liga per musim',
+    tech: 'React + Vite, Tailwind, Material Tailwind',
+
     href: 'https://e-alquran.vercel.app/',
-    category: 'personal', // Tambahkan kategori
+    category: 'personal',
   },
 ];
 
