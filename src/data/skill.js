@@ -11,22 +11,22 @@ const skills = {
       logo: 'IoLogoCss3',
     },
     {
-      skill: 'Javascript',
+      skill: 'JavaScript',
       link: 'https://www.w3schools.com/js/',
       logo: 'IoLogoJavascript',
     },
     {
-      skill: 'React.JS',
+      skill: 'React.js',
       link: 'https://react.dev/',
       logo: 'IoLogoReact',
     },
     {
-      skill: 'Next.JS',
+      skill: 'Next.js',
       link: 'https://nextjs.org/',
       logo: 'SiNextdotjs',
     },
     {
-      skill: 'Node.JS',
+      skill: 'Node.js',
       link: 'https://nodejs.org/en',
       logo: 'IoLogoNodejs',
     },

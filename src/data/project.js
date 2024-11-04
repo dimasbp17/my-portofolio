@@ -66,8 +66,25 @@ const project = [
     href: 'https://e-alquran.vercel.app/',
     category: 'personal',
   },
+
   {
     id: 6,
+    image: [
+      '/images/taste-bite-1.png',
+      '/images/taste-bite-2.png',
+      '/images/taste-bite-3.png',
+    ],
+    title: 'Taste Bite',
+    description:
+      'Taste Bite merupakan website yang menyediakan berbagai macam resep makanan di seluruh dunia, terdapat kategori makanan dan kategori berdasarkan area. Diambil dari The Meal DB.',
+    tech: 'React.js + Vite, Tailwind, Material Tailwind',
+
+    href: 'https://taste-bite-bice.vercel.app/',
+    category: 'personal',
+  },
+
+  {
+    id: 7,
     image: [
       '/images/football-1.png',
       '/images/football-2.png',
