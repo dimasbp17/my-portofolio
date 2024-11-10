@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <>
-      <div className="grid w-full grid-cols-1 p-5 text-white bg-black md:grid-cols-2 md:px-20">
+      <div className="grid w-full grid-cols-1 p-5 text-white bg-[#0F0F0F] md:grid-cols-2 md:px-20">
         <div className="flex items-center">
           2024 <span className="ml-2 text-hijau">Dimas Bagus Prasetyo.</span>
         </div>
