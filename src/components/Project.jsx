@@ -59,7 +59,7 @@ const Project = () => {
             className={`py-2 px-4 ${
               activeTab === 1
                 ? 'border-b-2 border-hijau text-hijau'
-                : 'text-gray-500'
+                : 'text-white'
             }`}
             onClick={() => handleTabClick(1)}
           >
@@ -69,7 +69,7 @@ const Project = () => {
             className={`py-2 px-4 ${
               activeTab === 2
                 ? 'border-b-2 border-hijau text-hijau'
-                : 'text-gray-500'
+                : 'text-white'
             }`}
             onClick={() => handleTabClick(2)}
           >
