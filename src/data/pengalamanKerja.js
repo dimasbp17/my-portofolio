@@ -1,7 +1,7 @@
 const pengalamanKerja = [
   {
-    company: 'Dicoding Indonesia',
-    time: 'Agustus 2022 - Desember 2022',
+    company: 'Sofyan Corporation',
+    time: 'Februari 2024 - November 2024',
     position: 'Frontend Web Developer',
     task: [
       'Berkontribusi dalam pengembangan sistem sekolah menggunakan React.js',
@@ -12,8 +12,8 @@ const pengalamanKerja = [
     ],
   },
   {
-    company: 'Sofyan Corporation',
-    time: 'Februari 2024 - sekarang',
+    company: 'Dicoding Indonesia',
+    time: 'Agustus 2022 - Desember 2022',
     position: 'Frontend Web Developer',
     task: [
       'Berkontribusi dalam pengembangan sistem sekolah menggunakan React.js',
