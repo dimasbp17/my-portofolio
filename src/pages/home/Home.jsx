@@ -11,7 +11,7 @@ import Experience from '../../components/Experience';
 const Home = () => {
   return (
     <>
-      <div className="bg-black font-inter">
+      <div className="bg-[#1a1a1a] font-inter">
         <Navbar />
 
         <section id="home">

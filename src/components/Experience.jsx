@@ -1,6 +1,7 @@
 import { Card } from '@material-tailwind/react';
 import React from 'react';
 import pengalamanKerja from '../data/pengalamanKerja';
+import { PiSuitcaseSimpleFill } from 'react-icons/pi';
 
 const Experience = () => {
   return (
@@ -10,18 +11,31 @@ const Experience = () => {
           Pengalaman <span className="pl-2 text-hijau">Kerja</span>
           <hr className="w-full border border-white md:ml-5" />
         </div>
-        <div className="grid w-full grid-cols-2 gap-5 mt-5">
+        <div className="w-full gap-5 max-w-[700px] space-y-10 mt-5">
           {pengalamanKerja.map((penga, index) => (
-            <Card className="w-full p-3 text-white bg-transparent border border-white">
-              <h1 className="font-semibold">{penga.position}</h1>
-              <h1>{penga.company}</h1>
-              <h1 className="italic">{penga.time}</h1>
-              <ul className="pl-5 mt-2 list-disc">
-                {penga.task.map((taskItem, taskIndex) => (
-                  <li key={taskIndex}>{taskItem}</li>
-                ))}
-              </ul>
-            </Card>
+            <div className="flex items-center">
+              <div className="p-2 bg-green-800 rounded-full">
+                <PiSuitcaseSimpleFill size={20} />
+              </div>
+              <hr className="w-10 border border-white" />
+              <Card
+                key={index}
+                className="w-full p-3 text-white bg-transparent border border-white"
+              >
+                <h1 className="text-lg font-semibold text-hijau">
+                  {penga.company}
+                </h1>
+                <div className="flex items-center justify-between">
+                  <h1 className="font-medium">{penga.position}</h1>
+                  <h1 className="text-xs italic">{penga.time}</h1>
+                </div>
+                <ul className="pl-5 mt-2 list-disc">
+                  {penga.task.map((taskItem, taskIndex) => (
+                    <li key={taskIndex}>{taskItem}</li>
+                  ))}
+                </ul>
+              </Card>
+            </div>
           ))}
         </div>
       </div>
