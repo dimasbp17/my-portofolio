@@ -22,9 +22,16 @@ const Experience = () => {
                 key={index}
                 className="w-full p-3 text-white bg-transparent border border-white"
               >
-                <h1 className="text-lg font-semibold text-hijau">
-                  {penga.company}
-                </h1>
+                <div className="flex items-center justify-between mb-2">
+                  <h1 className="text-lg font-semibold text-hijau">
+                    {penga.company}
+                  </h1>
+                  <img
+                    src={penga.image}
+                    alt={penga.company}
+                    className="w-[100px]"
+                  />
+                </div>
                 <div className="flex items-center justify-between">
                   <h1 className="font-medium">{penga.position}</h1>
                   <h1 className="text-xs italic">{penga.time}</h1>
