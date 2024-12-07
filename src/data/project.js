@@ -90,6 +90,22 @@ const project = [
       '/images/football-2.png',
       '/images/football-3.png',
     ],
+    title: 'Game Vault',
+    description:
+      'Game Vault merupakan website yang menyediakan informasi tentang game dari seluruh dunia dan berbagai platform',
+    tech: 'React + Vite, Tailwind, Material Tailwind',
+
+    href: 'https://e-alquran.vercel.app/',
+    category: 'personal',
+  },
+
+  {
+    id: 8,
+    image: [
+      '/images/football-1.png',
+      '/images/football-2.png',
+      '/images/football-3.png',
+    ],
     title: 'Earthquake & Wheater Info',
     description:
       'The Football Roster merupakan website yang menyediakan informasi tentang klub-klub sepakbola di dunia beserta update klasemen liga per musim',

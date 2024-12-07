@@ -15,9 +15,9 @@ const About = () => {
             seorang Frontend Web Developer yang bersemangat menciptakan
             pengalaman web yang menarik dan fungsional. Saya merupakan lulusan
             dari{' '}
-            <span className="text-hijau">Universitas AMIKOM Yogyakarta</span>{' '}
-            dan saat ini bekerja di Sofyan Corporation sebagai Frontend Web
-            Developer. Saya memiliki keahlian dalam berbagai teknologi
+            <span className="text-hijau">Universitas AMIKOM Yogyakarta,</span>{' '}
+            memiliki pengalaman bekerja di Sofyan Corporation sebagai Frontend
+            Web Developer. Saya memiliki keahlian dalam berbagai teknologi
             pengembangan web seperti{' '}
             <span className="text-hijau">
               HTML, CSS, JavaScript, React.js, Next.js, Node.js, Tailwind, dan
