@@ -1,16 +1,6 @@
 const project = [
   {
     id: 1,
-    image: ['/images/lms-1.png', '/images/lms-2.png', '/images/lms-3.png'],
-    title: 'Learning Management System',
-    description:
-      'Learning Management System merupakan website yang digunakan oleh instansi pendidikan Madina Islamic School yang digunakan sebagai media pembelajaran.',
-    tech: 'React + Vite, Tailwind, Material Tailwind',
-    href: 'https://tes-lms.vercel.app/',
-    category: 'professional',
-  },
-  {
-    id: 2,
     image: [
       '/images/safar-1.png',
       '/images/safar-2.png',
@@ -18,14 +8,40 @@ const project = [
     ],
     title: 'Safar Link',
     description:
-      'Safar Link merupakan suatu aplikasi berbasis web yang digunakan untuk membuat suatu laman yang dapat di share kepada khalayak umum.',
+      'Safar Link merupakan suatu platform berbasis web yang digunakan untuk membuat suatu laman yang berisi informasi dan dapat custom tampilan, dapat di share kepada khalayak umum.',
     tech: 'Next.Js, Tailwind, Material Tailwind',
 
     href: 'https://web.safarfriendly.com/dashboard/user/safar-link/my-link',
     category: 'professional',
   },
   {
+    id: 2,
+    image: ['/images/lms-1.png', '/images/lms-2.png', '/images/lms-3.png'],
+    title: 'Learning Management System',
+    description:
+      'Learning Management System merupakan website yang digunakan oleh instansi pendidikan Madina Islamic School yang digunakan sebagai media pembelajaran tingkat SD dan SMP.',
+    tech: 'React + Vite, Tailwind, Material Tailwind',
+    href: 'https://tes-lms.vercel.app/',
+    category: 'professional',
+  },
+
+  {
     id: 3,
+    image: [
+      '/images/hotel-1.png',
+      '/images/hotel-2.png',
+      '/images/hotel-3.png',
+    ],
+    title: '[Slicing] FO Sofyan Hotel',
+    description:
+      'FO Sofyan Hotel merupakan website untuk kebutuhan FO hotel untuk mengelola booking kamar, checkin dan checkout, informasi tamu, dan laporan keuangan.',
+    tech: 'Next.Js, Tailwind, Material Tailwind',
+
+    href: '',
+    category: 'professional',
+  },
+  {
+    id: 4,
     image: [
       '/images/movie-1.png',
       '/images/movie-2.png',
@@ -40,7 +56,7 @@ const project = [
     category: 'personal',
   },
   {
-    id: 4,
+    id: 5,
     image: [
       '/images/football-1.png',
       '/images/football-2.png',
@@ -56,7 +72,7 @@ const project = [
   },
 
   {
-    id: 5,
+    id: 6,
     image: ['/images/quran1.png', '/images/quran2.png', '/images/quran3.png'],
     title: 'E-Alquran',
     description:
@@ -68,7 +84,7 @@ const project = [
   },
 
   {
-    id: 6,
+    id: 7,
     image: [
       '/images/taste-bite-1.png',
       '/images/taste-bite-2.png',
@@ -84,23 +100,19 @@ const project = [
   },
 
   {
-    id: 7,
-    image: [
-      '/images/football-1.png',
-      '/images/football-2.png',
-      '/images/football-3.png',
-    ],
-    title: 'Game Vault',
+    id: 8,
+    image: ['/images/game-1.png', '/images/game-2.png', '/images/game-3.png'],
+    title: 'Game Vault [On Process]',
     description:
-      'Game Vault merupakan website yang menyediakan informasi tentang game dari seluruh dunia dan berbagai platform',
-    tech: 'React + Vite, Tailwind, Material Tailwind',
+      'Game Vault merupakan website yang menyediakan informasi tentang game dari seluruh dunia dan berbagai platform.',
+    tech: 'React + Vite, Zustand, Tailwind, Material Tailwind',
 
-    href: 'https://e-alquran.vercel.app/',
+    href: 'https://game-vault-nine.vercel.app/about',
     category: 'personal',
   },
 
   {
-    id: 8,
+    id: 9,
     image: [
       '/images/football-1.png',
       '/images/football-2.png',
