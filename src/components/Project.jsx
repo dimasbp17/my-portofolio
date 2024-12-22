@@ -28,7 +28,6 @@ const Project = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // Filter proyek berdasarkan kategori
   const personalProjects = project.filter(
     (data) => data.category === 'personal'
   );
@@ -40,23 +39,14 @@ const Project = () => {
     <>
       <div className="flex flex-col items-center justify-center w-full min-h-screen p-5 text-white md:p-20">
         <div className="relative flex items-center justify-center">
-          <div
-            className="font-bold text-[100px] md:text-[150px] text-nowrap -translate-x-52 "
-            style={{
-              WebkitTextStroke: '1px rgba(255, 255, 255, 0.2)',
-              color: 'transparent',
-            }}
-          >
-            MY PROJECT
-          </div>
-          <div className="absolute z-10 mt-5 mb-10 font-bold text-nowrap md:text-4xl">
+          <div className="absolute z-10 my-24 font-bold text-nowrap md:text-4xl">
             Project Saya
           </div>
         </div>
 
-        <div className="flex mb-10 text-lg font-bold">
+        <div className="flex my-10 space-x-5 text-lg font-bold">
           <button
-            className={`py-2 px-4 ${
+            className={`py-2 ${
               activeTab === 1
                 ? 'border-b-2 border-hijau text-hijau'
                 : 'text-white'
@@ -66,7 +56,7 @@ const Project = () => {
             Professional Project
           </button>
           <button
-            className={`py-2 px-4 ${
+            className={`py-2 ${
               activeTab === 2
                 ? 'border-b-2 border-hijau text-hijau'
                 : 'text-white'
