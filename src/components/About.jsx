@@ -9,7 +9,7 @@ const About = () => {
             Tentang <span className="ml-2 text-hijau">Saya</span>
             <hr className="w-full border border-white md:ml-5" />
           </div>
-          <div className="text-lg leading-8 text-justify ">
+          <div className="leading-8 text-justify ">
             Halo! Saya {''}
             <strong className="text-hijau">Dimas Bagus Prasetyo</strong>,
             seorang Frontend Web Developer yang bersemangat menciptakan

@@ -5,7 +5,7 @@ const pengalamanKerja = [
     time: 'Februari 2024 - November 2024',
     position: 'Frontend Web Developer',
     task: [
-      'Berkontribusi dalam pengembangan sistem sekolah menggunakan React.js',
+      'Berkontribusi dalam pengembangan sistem sekolah dan platform safar link menggunakan React.js dan Next.js',
       'Mengimplementasikan desain antarmuka pengguna (UI) dengan Material Tailwind',
       'Mengintegrasikan API dan memastikan performa aplikasi tetap optimal',
       'Meningkatkan efisiensi dengan mengoptimalkan komponen UI',

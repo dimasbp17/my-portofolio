@@ -7,7 +7,7 @@ const Experience = () => {
   return (
     <>
       <div className="flex flex-col items-center justify-center w-full min-h-screen p-5 text-white md:px-20">
-        <div className="flex flex-col items-start w-full mt-5 mb-5 text-4xl font-bold md:flex-row md:items-center text-nowrap">
+        <div className="flex flex-col items-start w-full mt-16 mb-5 text-4xl font-bold md:flex-row md:items-center text-nowrap">
           Pengalaman <span className="pl-2 text-hijau">Kerja</span>
           <hr className="w-full border border-white md:ml-5" />
         </div>

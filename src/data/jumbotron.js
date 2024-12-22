@@ -5,7 +5,7 @@ const dummyJumbotron = [
     description:
       'Saya Dimas Bagus Prasetyo, lulusan Informatika dari Universitas Amikom Yogyakarta dengan pengalaman sebagai pengembang web di Sofyan Corporation. Terampil dalam menggunakan React.js, saya berfokus pada pengembangan antarmuka yang responsif dan inovatif. Saya selalu bersemangat mempelajari teknologi baru dan mengembangkan solusi digital yang efektif.',
     skills: ['React.js', 'JavaScript', 'HTML', 'CSS', 'Material Tailwind'],
-    image: '/images/dimas.jpg',
+    image: '/images/dimas-nobg.png',
     socialLinks: [
       {
         icon: 'FaGithub',

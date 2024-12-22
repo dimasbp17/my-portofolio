@@ -23,7 +23,6 @@ const Typewriter = ({ texts, speed, loop }) => {
 
       return () => clearTimeout(nextTextTimeoutId);
     } else if (loop) {
-      // Loop back to the first text
       const resetTimeoutId = setTimeout(() => {
         setDisplayedText('');
         setCharIndex(0);

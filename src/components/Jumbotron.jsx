@@ -67,13 +67,28 @@ const Jumbotron = ({ name, role, description, image, socialLinks }) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 1, delay: 0.5 }}
+            className="flex items-center justify-between"
           >
             <Button
               size="lg"
-              className="flex items-center justify-center w-full capitalize bg-hijau"
+              variant="outlined"
+              className="flex items-center justify-center capitalize border border-hijau text-hijau"
             >
               <FaFileLines /> Download CV
             </Button>
+            <div className="flex gap-8">
+              {socialLinks.map((link, index) => (
+                <Link
+                  key={index}
+                  to={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center text-white duration-300 border border-white rounded-full hover:scale-105 bg-hijau/60 size-10"
+                >
+                  {iconMap[link.icon]}
+                </Link>
+              ))}
+            </div>
           </motion.div>
         </div>
         <div className="hidden space-y-10 col-span-full md:col-span-6 md:block">
@@ -87,12 +102,12 @@ const Jumbotron = ({ name, role, description, image, socialLinks }) => {
             <img
               src={image}
               alt="Dimas Bagus Prasetyo"
-              className="w-[300px] h-[300px] object-cover object-top z-10 hover:scale-105 duration-300 rounded-full"
+              className="w-[350px] h-[350px] object-cover object-top z-10 hover:scale-105 duration-300 rounded-full"
             />
             {/* <div className="absolute bg-lavender w-[300px] h-[300px] rounded-full top-4 ml-8"></div> */}
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
@@ -110,7 +125,7 @@ const Jumbotron = ({ name, role, description, image, socialLinks }) => {
                 {iconMap[link.icon]}
               </Link>
             ))}
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </>

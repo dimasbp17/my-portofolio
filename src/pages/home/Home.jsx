@@ -7,11 +7,12 @@ import About from '../../components/About';
 import Project from '../../components/Project';
 import Footer from '../../components/Footer';
 import Experience from '../../components/Experience';
+import Contact from '../../components/Contact';
 
 const Home = () => {
   return (
     <>
-      <div className="bg-[#1a1a1a] font-inter">
+      <div className="text-base bg-hitam font-jetbrain">
         <Navbar />
 
         <section id="home">
@@ -38,6 +39,9 @@ const Home = () => {
         </section>
         <section id="project">
           <Project />
+        </section>
+        <section id="contact">
+          <Contact />
         </section>
 
         <section>
