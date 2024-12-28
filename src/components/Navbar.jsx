@@ -103,14 +103,6 @@ const Navbar = () => {
                   Project
                 </button>
               </li>
-              <li>
-                <button
-                  onClick={() => scroolToSection('contact')}
-                  className={activeSection === 'contact' ? 'text-hijau' : ''}
-                >
-                  Contact
-                </button>
-              </li>
             </ul>
           </div>
         </div>

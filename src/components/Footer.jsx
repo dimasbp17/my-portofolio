@@ -25,29 +25,12 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex items-center space-x-2">
-            <Link
-              to={'/'}
-              target="blank"
-            >
+            <div>
               <MdOutlineEmail className="size-10" />
-            </Link>
+            </div>
             <div className="flex flex-col">
               <span className="text-white/70">Email</span>
               <span className="text-hijau">dimasbp1726@gmail.com</span>
-            </div>
-          </div>
-          <div className="flex items-center space-x-2">
-            <Link
-              to={'https://maps.app.goo.gl/L5AKV7FHTWmbW6f87'}
-              target="blank"
-            >
-              <MdOutlineLocationOn className="size-10" />
-            </Link>
-            <div className="flex flex-col">
-              <span className="text-white/70">Alamat</span>
-              <span className="text-hijau">
-                Pendem, Jamuskauman, Ngluwar, Magelang
-              </span>
             </div>
           </div>
         </div>
