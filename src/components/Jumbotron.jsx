@@ -102,7 +102,7 @@ const Jumbotron = ({ name, role, description, image, socialLinks }) => {
             <img
               src={image}
               alt="Dimas Bagus Prasetyo"
-              className="w-[350px] h-[350px] object-cover object-top z-10 hover:scale-105 duration-300 rounded-full"
+              className="w-[350px] h-[350px] object-cover object-top z-10 duration-300 rounded-full"
             />
             {/* <div className="absolute bg-lavender w-[300px] h-[300px] rounded-full top-4 ml-8"></div> */}
           </motion.div>

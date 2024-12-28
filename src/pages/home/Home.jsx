@@ -13,8 +13,9 @@ const Home = () => {
   return (
     <>
       <div className="text-base bg-hitam font-jetbrain">
-        <Navbar />
-
+        <section>
+          <Navbar />
+        </section>
         <section id="home">
           {dummyJumbotron.map((data, index) => (
             <div key={index}>
@@ -43,7 +44,6 @@ const Home = () => {
         <section id="contact">
           <Contact />
         </section>
-
         <section>
           <Footer />
         </section>
