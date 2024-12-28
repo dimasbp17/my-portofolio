@@ -1,13 +1,12 @@
 import React from 'react';
-import Navbar from '../../components/Navbar';
-import Jumbotron from '../../components/Jumbotron';
-import dummyJumbotron from '../../data/jumbotron';
-import Skill from '../../components/Skill';
 import About from '../../components/About';
-import Project from '../../components/Project';
-import Footer from '../../components/Footer';
 import Experience from '../../components/Experience';
-import Contact from '../../components/Contact';
+import Footer from '../../components/Footer';
+import Jumbotron from '../../components/Jumbotron';
+import Navbar from '../../components/Navbar';
+import Project from '../../components/Project';
+import Skill from '../../components/Skill';
+import dummyJumbotron from '../../data/jumbotron';
 
 const Home = () => {
   return (
@@ -40,9 +39,6 @@ const Home = () => {
         </section>
         <section id="project">
           <Project />
-        </section>
-        <section id="contact">
-          <Contact />
         </section>
         <section>
           <Footer />

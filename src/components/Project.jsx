@@ -38,13 +38,12 @@ const Project = () => {
   return (
     <>
       <div className="flex flex-col items-center justify-center w-full min-h-screen p-5 text-white md:p-20">
-        <div className="relative flex items-center justify-center">
-          <div className="absolute z-10 my-24 font-bold text-nowrap md:text-4xl">
-            Project Saya
-          </div>
+        <div className="flex flex-col items-start w-full mb-5 text-4xl font-bold md:flex-row md:items-center text-nowrap">
+          Project <span className="pl-2 text-hijau">Saya</span>
+          <hr className="w-full border border-white md:ml-5" />
         </div>
 
-        <div className="flex my-10 space-x-5 text-lg font-bold">
+        <div className="flex mt-5 mb-5 space-x-5 text-lg font-bold">
           <button
             className={`py-2 ${
               activeTab === 1
