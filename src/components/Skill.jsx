@@ -18,6 +18,7 @@ import {
 import { FaBootstrap, FaFigma, FaGithub } from 'react-icons/fa6';
 import skills from '../data/skill.js';
 import { TbBrandVite } from 'react-icons/tb';
+import { BiLogoTypescript } from 'react-icons/bi';
 
 const Skill = () => {
   const iconMap = {
@@ -36,6 +37,7 @@ const Skill = () => {
     SiAdobeillustrator: <SiAdobeillustrator />,
     SiAdobephotoshop: <SiAdobephotoshop />,
     TbBrandVite: <TbBrandVite />,
+    BiLogoTypescript: <BiLogoTypescript />,
   };
   return (
     <>
