@@ -16,6 +16,11 @@ const skills = {
       logo: 'IoLogoJavascript',
     },
     {
+      skill: 'TypeScript',
+      link: 'https://www.w3schools.com/typescript/',
+      logo: 'BiLogoTypescript',
+    },
+    {
       skill: 'React.js',
       link: 'https://react.dev/',
       logo: 'IoLogoReact',
