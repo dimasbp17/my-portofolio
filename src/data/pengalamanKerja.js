@@ -4,7 +4,10 @@ const pengalamanKerja = [
     image: '/images/sesasi_darkmode.svg',
     time: 'Februari 2025 - Sekarang',
     position: 'Frontend Web Developer',
-    task: ['Melakukan maintenance sistem e-LPTKDN Kemnaker'],
+    task: [
+      'Membuat sistem peringatan dini BPBD Kabupaten Demak menggunakan React.ts dan Tailwind',
+      'Melakukan maintenance sistem e-LPTKDN Kementrian Ketenagakerjaan',
+    ],
   },
   {
     company: 'Sofyan Corporation',
