@@ -2,6 +2,21 @@ const project = [
   {
     id: 1,
     image: [
+      '/images/sipeni-1.png',
+      '/images/sipeni-2.png',
+      '/images/sipeni-3.png',
+    ],
+    title: 'Sistem Informasi Peringatan Dini',
+    description:
+      'Sistem Informasi Peringatan Dini (SIPENI) merupakan sistem yang digunakan untuk pelaporan bencana oleh warga Kabupaten Demak',
+    tech: 'React.Ts, Tailwind, Shadcn UI, Leaflet',
+
+    href: 'https://sipenidev.sesasi.xyz/',
+    category: 'professional',
+  },
+  {
+    id: 2,
+    image: [
       '/images/safar-1.png',
       '/images/safar-2.png',
       '/images/safar-3.png',
@@ -15,7 +30,7 @@ const project = [
     category: 'professional',
   },
   {
-    id: 2,
+    id: 3,
     image: ['/images/lms-1.png', '/images/lms-2.png', '/images/lms-3.png'],
     title: 'Learning Management System',
     description:
@@ -26,7 +41,7 @@ const project = [
   },
 
   {
-    id: 3,
+    id: 4,
     image: [
       '/images/hotel-1.png',
       '/images/hotel-2.png',
